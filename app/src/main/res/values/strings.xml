@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Nepali News</string>
+
+    <string name="newspaper">Newspapers</string>
+    <string name="videoNews"> Video News </string>
+    <string name="back">back</string>
+    <string name="nepalinews">Nepali News</string>
+
+    <string name="rate_dialog_title">Rate this app</string>
+    <string name="rate_dialog_message"> Please support nepali apps </string>
+    <string name="rate_dialog_ok">Rate It Now</string>
+    <string name="rate_dialog_cancel">Remind Me Later</string>
+    <string name="rate_dialog_no">No, Thanks</string>
+
+</resources>
+

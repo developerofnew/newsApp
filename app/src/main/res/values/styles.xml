@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+        <!-- Customize your theme here. -->
+       <style name="MyCustomToolBarTheme" parent="ThemeOverlay.AppCompat.Dark">
+
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+           <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+
+
+    </style>
+
+    
+
+
+</resources>

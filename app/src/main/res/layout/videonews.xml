@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/tools">
+
+<Button
+    android:id="@+id/btnVideo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="go To youtube"
+    android:textSize="30sp"
+    />
+
+</RelativeLayout>
