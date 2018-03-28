@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         String newsPaper = getString(R.string.newspaper);
         String videoNews = getString(R.string.videoNews);
 
-
-        adapter.addPage(new VideoNews(), videoNews);
         adapter.addPage(new NewsPaper(), newsPaper);
+        adapter.addPage(new VideoNews(), videoNews);
+
 
 
         pager.setAdapter(adapter);

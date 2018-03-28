@@ -39,7 +39,7 @@ public class NewsPaper extends Fragment {
 
         ArrayList<NewsPojo> newsPojos = new ArrayList<>();
 
-        NewsPojo news = new NewsPojo("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCoMdktPbSTixAyNGwb-UYkQ&maxResults=20&order=date&key=AIzaSyBVCX3kSZCynU8HPSPUn2a5GpDQyDOu1oM",R.drawable.compass);
+        NewsPojo news = new NewsPojo("http://baahrakhari.com/",R.drawable.compass);
 
         newsPojos.add(news);
 

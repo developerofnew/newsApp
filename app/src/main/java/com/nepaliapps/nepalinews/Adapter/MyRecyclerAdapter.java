@@ -9,11 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nepaliapps.nepalinews.FragmentMain.ChannelFragment;
+
 import com.nepaliapps.nepalinews.Interface.ItemClickInterface;
 import com.nepaliapps.nepalinews.Pojo.NewsPojo;
 import com.nepaliapps.nepalinews.R;
-import com.nepaliapps.nepalinews.VideoActivity;
 import com.nepaliapps.nepalinews.WebView;
 
 import java.util.ArrayList;
@@ -59,7 +58,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
             @Override
             public void onClick(int position) {
 
-                Intent intent = new Intent(c, VideoActivity.class);
+                Intent intent = new Intent(c, WebView.class);
                 intent.putExtra("web_key", url);
                 c.startActivity(intent);
             }
