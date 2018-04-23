@@ -29,7 +29,7 @@ public class NewsPaper extends Fragment {
         View v = inflater.inflate(R.layout.newspaper, null);
 
         RecyclerView recyclerView =  v.findViewById(R.id.recyclerview_newspaper);
-        recyclerView.setLayoutManager(new GridLayoutManager(this.getActivity(),2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this.getActivity(),1));
         recyclerView.setAdapter(new MyRecyclerAdapter(this.getActivity(),get()));
 
         return v;
@@ -39,19 +39,19 @@ public class NewsPaper extends Fragment {
 
         ArrayList<NewsPojo> newsPojos = new ArrayList<>();
 
-        NewsPojo news = new NewsPojo("http://baahrakhari.com/",R.drawable.compass);
+        NewsPojo news = new NewsPojo("https://stackov",R.drawable.news24);
 
         newsPojos.add(news);
 
-        news = new NewsPojo("http://www.news24nepal.tv/",R.drawable.youtube);
+        news = new NewsPojo("http://www.news24nepal.tv",R.drawable.sagarmathatv);
 
         newsPojos.add(news);
 
-        news = new NewsPojo("http://baahrakhari.com/",R.drawable.google);
+        news = new NewsPojo("http://baahrakhari.com",R.drawable.nepaliheadlines);
 
         newsPojos.add(news);
 
-        news = new NewsPojo("http://baahrakhari.com/",R.drawable.tree);
+        news = new NewsPojo("http://baahrakhari.com",R.drawable.kantipur);
 
         newsPojos.add(news);
 

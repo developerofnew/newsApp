@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nepaliapps.nepalinews">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -18,9 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebView" />
-        <activity android:name=".Youtube.DetailActivity" />
-        <activity android:name=".VideoActivity"></activity>
+        <activity
+            android:name=".WebView"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <activity android:name=".RadioActivity"
+
+
+            android:launchMode="singleTask"
+
+            > </activity>
+        <service android:name=".MyService"/>
     </application>
 
 </manifest>

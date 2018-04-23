@@ -36,7 +36,7 @@ public class VideoNews extends Fragment{
         //recyclerview
         RecyclerView layoutManager = v.findViewById(R.id.videonews);
         // layoutManager.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        layoutManager.setLayoutManager(new GridLayoutManager(this.getActivity(),2));
+        layoutManager.setLayoutManager(new GridLayoutManager(this.getActivity(),3));
         //layoutManager.setLayoutManager(new StaggeredGridLayoutManager(2,2));
         layoutManager.setAdapter(new MyRecyclerAdapter(this.getActivity(),getVideos()));
 
@@ -47,19 +47,33 @@ public class VideoNews extends Fragment{
     private ArrayList<NewsPojo> getVideos(){
 
         ArrayList<NewsPojo> newsPojo = new ArrayList<>();
-        NewsPojo news = new NewsPojo("https://stackoverflow.com/questions/2169294/how-to-add-manifest-permission-to-android-application/2169311",R.drawable.pen);
+        NewsPojo news = new NewsPojo("https://stackoverflow.com/questions/2169294/how-to-add-manifest-permission-to-android-application/2169311",R.drawable.mazzako);
         newsPojo.add(news);
 
-        news= new NewsPojo("https://stackoverflow.com/questions/2169294/how-to-add-manifest-permission-to-android-application/2169311",R.drawable.youtube);
+        news= new NewsPojo("https://www.youtube.com/watch?v=zprAqNffSjk&t=445s",R.drawable.saptahik);
         newsPojo.add(news);
 
-        news= new NewsPojo("https://stackoverflow.com/questions/2169294/how-to-add-manifest-permission-to-android-application/2169311",R.drawable.mobile);
+        news= new NewsPojo("https://stackoverflow.com/questions/2169294/how-to-add-manifest-permission-to-android-application/2169311",R.drawable.bbcnepali);
         newsPojo.add(news);
 
-        news= new NewsPojo("himalayan",R.drawable.compass);
+        news= new NewsPojo("himalayan",R.drawable.annapurna);
         newsPojo.add(news);
 
-        news= new NewsPojo("himalayan",R.drawable.google);
+        news= new NewsPojo("himalayan",R.drawable.medianp);
+        newsPojo.add(news);
+
+
+        news= new NewsPojo("himalayan",R.drawable.annapurna);
+        newsPojo.add(news);
+
+        news= new NewsPojo("himalayan",R.drawable.medianp);
+        newsPojo.add(news);
+
+
+        news= new NewsPojo("himalayan",R.drawable.annapurna);
+        newsPojo.add(news);
+
+        news= new NewsPojo("himalayan",R.drawable.medianp);
         newsPojo.add(news);
 
         return newsPojo;

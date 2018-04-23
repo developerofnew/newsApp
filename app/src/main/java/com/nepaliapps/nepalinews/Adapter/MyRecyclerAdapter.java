@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.nepaliapps.nepalinews.Interface.ItemClickInterface;
 import com.nepaliapps.nepalinews.Pojo.NewsPojo;
 import com.nepaliapps.nepalinews.R;
+import com.nepaliapps.nepalinews.RadioActivity;
 import com.nepaliapps.nepalinews.WebView;
 
 import java.util.ArrayList;
@@ -54,17 +55,30 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
         holder.img.setImageResource(newsPojos.get(position).getImage());
         holder.webLink.setText(url);
 
+
         holder.setItemClick(new ItemClickInterface() {
             @Override
             public void onClick(int position) {
 
-                Intent intent = new Intent(c, WebView.class);
-                intent.putExtra("web_key", url);
-                c.startActivity(intent);
+
+
+       Intent intent = new Intent(c, RadioActivity.class);
+       intent.putExtra("web_key", url);
+       // intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+       //   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+       c.startActivity(intent);
+
+
+
+
+
+
             }
         });
 
     }
+
 
     @Override
     public int getItemCount() {

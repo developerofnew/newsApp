@@ -40,6 +40,8 @@ public class WebView extends AppCompatActivity {
     }
 
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -69,6 +71,14 @@ public class WebView extends AppCompatActivity {
         String webLink = getIntent().getStringExtra("web_key");
 
         webView = findViewById(R.id.webview);
+
+        webView.setInitialScale(1);
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setUseWideViewPort(true);
+        webView.setScrollbarFadingEnabled(false);
+
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setAppCacheEnabled(true);

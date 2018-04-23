@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 
 import com.nepaliapps.nepalinews.Adapter.MyFragmentAdapter;
 import com.nepaliapps.nepalinews.FragmentMain.NewsPaper;
+import com.nepaliapps.nepalinews.FragmentMain.RadioAndCalendar;
 import com.nepaliapps.nepalinews.FragmentMain.VideoNews;
 
 import hotchemi.android.rate.AppRate;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         vp = findViewById(R.id.viewpager);
+
         this.addViewpager(vp);
 
 
@@ -54,13 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
         String newsPaper = getString(R.string.newspaper);
         String videoNews = getString(R.string.videoNews);
+        String radioandcalendar = "Radio And Calendar";
 
         adapter.addPage(new NewsPaper(), newsPaper);
         adapter.addPage(new VideoNews(), videoNews);
+        adapter.addPage(new RadioAndCalendar(),radioandcalendar);
 
 
 
         pager.setAdapter(adapter);
+
+
 
     }
 
